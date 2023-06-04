@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const userRoute = require('./routes/users');
 const authRoute = require('./routes/auth');
 const postRoute = require('./routes/posts');
+const testimonialRoute = require('./routes/testimonials');
 const multer = require('multer');
 
 dotenv.config();
@@ -42,6 +43,7 @@ console.log("userRoute: ", userRoute);
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postRoute);
+app.use("/api/testimonials", testimonialRoute);
 
 // app.get("/", (req, res) => {
 //     res.send("welcome to homepage");
