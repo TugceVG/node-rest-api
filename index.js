@@ -21,6 +21,7 @@ mongoose.connect(process.env.MONGO_URL, options)
 
 app.use("/images", express.static(path.join(__dirname, "public/images")));
 
+
 //middleware
 app.use(express.json());
 app.use(helmet());
