@@ -43,7 +43,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     } catch (err) {
         console.log(err);
     }
-})
+});
 
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
